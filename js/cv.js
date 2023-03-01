@@ -12,3 +12,18 @@ document.querySelector('.volver-arriba').onclick = function () {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 };
+
+// Muestra un texto cuando se pasa el mouse sobre cada uno de los íconos de la barra
+const icons = document.querySelectorAll('.icon-bar i');
+const textElement = document.getElementById('icon-text');
+
+icons.forEach(icon => {
+    icon.addEventListener('mouseover', () => {
+        const text = icon.getAttribute('data-text');
+        textElement.textContent = text;
+    });
+
+    icon.addEventListener('mouseout', () => {
+        textElement.textContent = '';
+    });
+});

@@ -1,4 +1,4 @@
-
+/* Establecer un estilo para la foto de perfil */
 img {
     border: 3px solid black;
     width: 15%;
@@ -6,10 +6,11 @@ img {
     margin: auto;
 }
 
+/* Establecer un color para el background del header */
 header{
     background-color: #0D0467;
 }
-
+/* Establecer un estilo para el icono arriba */
 .volver-arriba {
     position: fixed;
     bottom: 20px;
@@ -28,8 +29,6 @@ header{
 .volver-arriba:hover {
     background-color: #555;
 }
-
-
 
 /* Establecer un estilo para el cuerpo de la página */
 body {
@@ -64,4 +63,33 @@ footer {
     color: #fff;
     padding: 1em;
     text-align: center;
+}
+
+/* Establecer un estilo para barra de iconos */
+.icon-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.icon-bar i {
+    color: #0D0467;
+    font-size: 30px;
+    margin: 0 10px;
+    padding: 0;
+}
+
+#text-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#icon-text {
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
 }
